@@ -7,7 +7,6 @@ const [searchTerm, setSearchTerm] = useState('');
             <div className="input-box">
                 <input type="text" placeholder="Search here..." onChange={event => {setSearchTerm(event.target.value)}}/>
             </div>
-
         </div>
     )
 }
