@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Take a Hike Connecticut Website 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Group Members
 
-In the project directory, you can run:
+Tony Bosco @Boscobrand
+McKenzie Camacho @mckenziecamacho
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Project Description
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The Take a Hike Connecticut app would be the first of a 50 state rollout to encourage hiking and the enjoyment of the great outdoors. The app gives users the ability to research hiking destinations with relevant information to help plan their outing.
 
-### `npm test`
+### List of Models and Their Properties
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Trail
+name: "String"
+location: "String"
+image: "String"
+difficulty: "String"
+miles: Number
+terrain: "String"
+duration: (might be number, time, or string - we may choose string -TBD)
+site link: "String"
 
-### `npm run build`
+Reviews:
+title: "String"
+rating (1-5): Number
+body: "String"
+author: "String"
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Scrum manager/project manager's name
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Tony Bosco
 
-### `npm run eject`
+### User Stories
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+As a user, I want to easily search for hiking trails on the site
+As a user, I want to search by name or location
+As a user, I want to be able to click images and be directed to detailed information
+As a user, I want to see reviews and insights from other hikers
+As a user, I might be interested in saving the information I have found
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### MVP Goals
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Front/Back End Functionality
+Components (Header, Image Cards, Search Box/Results, Info Card, Reviews, Button, Menu)
+Responsive (include mobile)
 
-## Learn More
+### Stretch Goals
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+User profile
+Backpack storage
+Post a review
