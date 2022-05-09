@@ -6,24 +6,19 @@ const Header = () =>{
     return(
         <div className='header'>
             <header>
-            <h1>
-                Take a Hike Connecticut
-            </h1>
+        
             <nav className='navbar'>
-                <Link to="/home">
-                <h1>Home</h1>
-                </Link>
-                <div className='search-box'>
-                    <Link to='/search'>
-                        <h1>Search</h1>
-                    </Link>
-                 </div>
+                <div className='home'>
+                <Link to="/home"><h4>Home</h4></Link>
+                    </div>
+
                  <div className='about'> 
-                    <Link to='/about'>
-                     <h1>About</h1>
-                 </Link>
+                    <Link to='/about'><h4>About</h4></Link>
                  </div>
              </nav>
+             <div className='title'>
+                <h1>Take a Hike Connecticut</h1>
+            </div>
             </header>
         </div>
 

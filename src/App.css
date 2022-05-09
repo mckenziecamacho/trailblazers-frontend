@@ -1,7 +1,47 @@
+body{
+  background: url("https://images.alphacoders.com/217/217413.png") no-repeat fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+
 .App-header{
   text-align: center;
-  border-style: solid;
   margin: 5px;
   padding: 5px;
-  border-color: green;
+}
+
+.navbar{
+  font-size: 15px;
+  display: flex;
+  justify-content: left;
+  padding-bottom: 5px;
+} 
+
+.search{
+  display: flex;
+  margin: 55px;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+  text-indent: 4em;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    
 }
