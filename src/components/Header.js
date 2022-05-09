@@ -5,20 +5,27 @@ import { Link } from 'react-router-dom';
 const Header = () =>{
     return(
         <div className='header'>
+            
             <header>
-        
-            <nav className='navbar'>
-                <div className='home'>
-                <Link to="/home"><h4>Home</h4></Link>
-                    </div>
+                <div>
+                    <h1>Take a Hike Connecticut</h1>
+                </div>
 
-                 <div className='about'> 
-                    <Link to='/about'><h4>About</h4></Link>
-                 </div>
-             </nav>
-             <div className='title'>
-                <h1>Take a Hike Connecticut</h1>
-            </div>
+            <nav className='navbar'>
+
+                <div className='home'>
+                    <Link to="/"><h4>Home</h4></Link>
+                </div>
+
+                <div className='search-box'>
+                    <Link to='/search'><h1>Search</h1></Link>
+                </div>
+                
+                <div className='about'> 
+                    <Link to='/About'><h1>About</h1></Link>
+                </div>
+            </nav>
+            
             </header>
         </div>
 

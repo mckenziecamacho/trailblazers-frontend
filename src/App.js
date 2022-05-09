@@ -1,3 +1,4 @@
+import React from "react"
 import './App.css';
 import Header from './components/Header'
 import { Route, Routes, Router } from 'react-router-dom';
@@ -9,18 +10,22 @@ import About from './components/About'
 function App() {
   return (
     <div className="App">
+      
       <header className="App-header">
         <Header />
         <SearchBox />
 
-
-      
-      <Routes>
-        <Route path="/" element={<Homepage />}/>
-        <Route path='/home' element={<Homepage />}/>
-        <Route path='/about' element={<About />}/>
-      </Routes>
       </header>
+
+      <main>
+      <Router>
+        <Routes>
+            <Route path="/" element={<Homepage />}/>
+            <Route path='/home' element={<Homepage />}/>
+           <Route path='/about' element={<About />}/>
+        </Routes>
+      </Router>
+      </main>
     </div>
   );
 }
