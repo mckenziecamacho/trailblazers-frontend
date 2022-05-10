@@ -9,7 +9,7 @@ const [searchTerm, setSearchTerm] = useState('');
                 <input type="text" placeholder="Search here..." onChange={event => {setSearchTerm(event.target.value)}}/>
             </div>
             {props.data.filter((val) => {
-                if (searchTerm == ''){
+                if (searchTerm === '') {
                     return val
                 } else if (val.title.toLowerCase().includes(searchTerm.toLowerCase())){
                     return val
