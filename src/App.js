@@ -21,7 +21,6 @@ class App extends Component {
     const response = await fetch(url, {
       // mode: 'cors',
       // credentials: 'include',
-      method: "POST",
       headers: {
       "Content-Type": "application/json"
       },
