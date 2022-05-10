@@ -9,6 +9,7 @@ import React, {Component} from 'react';
 
 class App extends Component {
   constructor(props){
+  super(props);
     this.state = {
         loading: true,
         items: [],
@@ -36,6 +37,7 @@ class App extends Component {
           <Route path="/" element={<Homepage data={this.state.items}/>}/>
           <Route path='/home' element={<Homepage data={this.state.items}/>}/>
           <Route path='/about' element={<About />}/>
+          <Route path='trail-details/:id' element={<SearchBox data={this.state.items}/>}/>
         </Routes>
         </header>
       </div>

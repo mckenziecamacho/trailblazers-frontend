@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Trail from '../../trailblazers-backend/models/Trail';
+
 
 function TrailCard ({trail}){
     return(
