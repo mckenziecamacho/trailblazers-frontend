@@ -19,16 +19,19 @@ class App extends Component {
     //method allows us to execute the react code when the component is already placed in the dom
     const url = 'https://take-a-hike-ct.herokuapp.com/api/trail';
     const response = await fetch(url, {
-      mode: 'cors',
-      credentials: 'include'
+      // mode: 'cors',
+      // credentials: 'include',
+      method: "POST",
+      headers: {
+      "Content-Type": "application/json"
+      },
     });
     const data = await response.json();
     this.setState({items: data})
   }
 
   render(){
-
-    return (
+  return (
       <div className="App">
         <header className="App-header">
           <Header />
