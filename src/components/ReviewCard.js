@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ResultList(props) {
+function ReviewCard(props) {
      
      return(
 
@@ -22,4 +22,4 @@ function ResultList(props) {
      )
 
 }
-export default ResultList;
+export default ReviewCard;
