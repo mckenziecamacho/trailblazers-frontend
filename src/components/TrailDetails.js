@@ -2,7 +2,7 @@ import React, { Component, useEffect } from 'react';
 import {useParams} from "react-router-dom";
 import { useState } from 'react';
 
-const url = 'https://take-a-hike-ct.herokuapp.com/';
+const url = 'https://take-a-hike-ct.herokuapp.com/api/trail';
 
 function TrailDetails() {
     const [trail, setTrail] = useState();
@@ -53,3 +53,4 @@ function TrailDetails() {
     // "review":"Mount Frissell"
 
 }
+export default TrailDetails;
