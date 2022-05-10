@@ -36,7 +36,6 @@ function TrailDetails() {
             <div className='overview'> <b>Overview:</b> </div>
             <div className='website'> <b>Website: </b> </div>
             <div className='review'> <b>Review: </b> </div>
-
         </div>
     )
 

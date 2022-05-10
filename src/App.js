@@ -15,6 +15,7 @@ class App extends Component {
         items: [],
     }
 }
+
   async componentDidMount(){
     //method allows us to execute the react code when the component is already placed in the dom
     const url = 'https://take-a-hike-ct.herokuapp.com/api/trail';
@@ -24,8 +25,7 @@ class App extends Component {
   }
 
   render(){
-
-    return (
+  return (
       <div className="App">
         <header className="App-header">
           <Header />
