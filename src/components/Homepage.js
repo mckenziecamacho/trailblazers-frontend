@@ -11,7 +11,7 @@ const Homepage = (props) => {
             {
                 props.data.map(trail => {
                     return(
-                        <TrailCard trail={trail}/>
+                        <TrailCard trail={trail} key={props}/>
                     )})
 
             }

@@ -19,7 +19,7 @@ class App extends Component {
 
   async componentDidMount(){
     //method allows us to execute the react code when the component is already placed in the dom
-    const url = 'https://take-a-hike-ct.herokuapp.com/api/trail';
+    const url = 'https://take-a-hike-ct.herokuapp.com/api/trail/';
     const response = await fetch(url);
     const data = await response.json();
     this.setState({items: data})

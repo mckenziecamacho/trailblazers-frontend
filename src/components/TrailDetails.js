@@ -2,13 +2,12 @@ import React, { useEffect } from 'react';
 import {useParams} from "react-router-dom";
 import { useState } from 'react';
 
-const url = 'https://take-a-hike-ct.herokuapp.com/api/trail';
+const url = 'https://take-a-hike-ct.herokuapp.com/api/trail/';
 
-function TrailDetails(props) {
-    const [trail, setTrail] = useState([]);
+function TrailDetails() {
+    const [trail, setTrail] = useState();
     //useState allows you to have state variables in functional components
     const trailId = useParams()._id
-    const trails = props.data.filter(trails => trails._id === trailId)[0]
     //returns on object of key/value pairs of url parameters
     useEffect(() => {
     //tells react that your component needs to do something after render
@@ -19,7 +18,7 @@ function TrailDetails(props) {
                 console.log(res)
             })
             .catch((error => {
-            console.log(error)
+            // console.log(error)
             })
         )
     },[])
