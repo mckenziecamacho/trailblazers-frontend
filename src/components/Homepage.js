@@ -9,9 +9,9 @@ const Homepage = (props) => {
         
         <div>
             {
-                props.data.map(trail => {
+                props.data.map(trails => {
                     return(
-                        <TrailCard trail={trail} key={props}/>
+                        <TrailCard trails={trails} key={props}/>
                     )})
 
             }
