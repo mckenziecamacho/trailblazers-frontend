@@ -6,7 +6,7 @@ function TrailCard ({trails}){
     console.log(trails)
     return(
         <div className="trails-images">
-           <Link to={"/trail-details/" + trails._id }><img src={trails.image} height={300}/>{}</Link>
+           <Link to={"/trail-details/" + trails._id }><img src={trails.image} alt="photo" height={300}/>{}</Link>
             {trails.name}
         </div>
     )

@@ -27,6 +27,7 @@ import { useState } from 'react';
 
   const TrailDetails=(props) => {
       const[trail,setTrails] =useState("");
+        console.log(trail)
       const trailId = useParams()._id
       const trails = props.data.filter(trails => trails._id === trailId)[0]
       useEffect(() => {
