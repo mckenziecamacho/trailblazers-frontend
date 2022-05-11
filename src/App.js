@@ -23,21 +23,22 @@ class App extends Component {
     const response = await fetch(url);
     const data = await response.json();
     this.setState({items: data})
+    console.log(data)
   }
-
+  
   render(){
   return (
       <div className="App">
         <header className="App-header">
-          <Header />
-          <SearchBox data={this.state.items}/>
-        <TrailDetails/>
-  
+        <Header />
+        <SearchBox/>
+          
         <Routes>
           <Route path="/" element={<Homepage data={this.state.items}/>}/>
           <Route path='/home' element={<Homepage data={this.state.items}/>}/>
           <Route path='/about' element={<About />}/>
-          <Route path='trail-details/:id' element={<TrailDetails data={this.state.items}/>}/>
+          <Route path='/trail-details/:_id' element={<TrailDetails data={this.state.items}/>}/>
+          <Route path='/search' element={<SearchBox data={this.state.items}/>}/>
         </Routes>
         </header>
       </div>
