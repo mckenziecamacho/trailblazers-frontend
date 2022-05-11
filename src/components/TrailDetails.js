@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import {useParams} from "react-router-dom";
 import { useState } from 'react';
 
-const url = 'https://take-a-hike-ct.herokuapp.com/api/trail';
+// const url = 'https://take-a-hike-ct.herokuapp.com/api/trail';
 
 // function TrailDetails(props) {
 //     const [trail, setTrail] = useState([]);
@@ -25,17 +25,19 @@ const url = 'https://take-a-hike-ct.herokuapp.com/api/trail';
 //     },[])
 
 
-  const TrailDetails=() => {
-      const[trail,setTrail] =useState("");
+  const TrailDetails=(props) => {
+      const[trail,setTrails] =useState("");
       const trailId = useParams()._id
+    //   const trails = props.data.filter(trails => trails._id === trailId)[0]
       useEffect(() => {
         const url = 'https://take-a-hike-ct.herokuapp.com/api/trail';
 
         const fetchData = async () => {
             try {
                 const response = await fetch(url);
-                const json = await response.json();
-                console.log(json);
+                const result = await response.json();
+                setTrails(result.data)
+                console.log(result);
                 } catch (error) {
                 console.log("error", error);
                 }
@@ -61,6 +63,18 @@ const url = 'https://take-a-hike-ct.herokuapp.com/api/trail';
             <div className='review'> <b>Review: </b> {trail? trail.review : ""}</div>
         </div>
     )}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 export default TrailDetails;

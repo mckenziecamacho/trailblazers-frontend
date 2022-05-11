@@ -6,7 +6,7 @@ import SearchBox from './components/SearchBox';
 import About from './components/About'
 import React, {Component} from 'react';
 import TrailDetails from './components/TrailDetails';
-
+import TrailCard from './components/TrailCard';
 
 class App extends Component {
   constructor(props){
@@ -38,6 +38,7 @@ class App extends Component {
           <Route path='/home' element={<Homepage data={this.state.items}/>}/>
           <Route path='/about' element={<About />}/>
           <Route path='/trail-details/:_id' element={<TrailDetails data={this.state.items}/>}/>
+          <Route path='/TrailCard' element={<TrailCard data={this.state.items}/>}/>
           <Route path='/search' element={<SearchBox data={this.state.items}/>}/>
         </Routes>
         </header>
