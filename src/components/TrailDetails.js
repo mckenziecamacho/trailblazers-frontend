@@ -29,6 +29,7 @@ const TrailDetails=(props) => {
     
     return(
         <div className='trail-details'>
+            <div className='id'>{trails? trails.id : ""}</div>
             <div className='name'>  <b>Name: </b>{trails? trails.name : ""}</div>
             <div className='location'> <b>Location: </b>{trails? trails.location : ""} </div>
             <div className='image'> <b>Image: </b>{trails? trails.image : ""} </div>
@@ -39,20 +40,7 @@ const TrailDetails=(props) => {
             <div className='overview'> <b>Overview:</b> {trails? trails.overview : ""}</div>
             <div className='website'> <b>Website: </b> {trails? trails.website : ""}</div>
             <div className='review'> <b>Review: </b> {trails? trails.review : ""}</div>
+            
         </div>
     )}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 export default TrailDetails;

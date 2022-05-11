@@ -6,7 +6,7 @@ import SearchBox from './components/SearchBox';
 import About from './components/About'
 import React, {Component} from 'react';
 import TrailDetails from './components/TrailDetails';
-
+import ReviewCard from './components/ReviewCard';
 
 class App extends Component {
   constructor(props){
@@ -32,7 +32,9 @@ class App extends Component {
         <header className="App-header">
         <Header />
         <SearchBox/>
-          
+  
+      {/* <ReviewCard/> */}
+
         <Routes>
           <Route path="/" element={<Homepage data={this.state.items}/>}/>
           <Route path='/home' element={<Homepage data={this.state.items}/>}/>
