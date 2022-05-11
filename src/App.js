@@ -37,6 +37,7 @@ class App extends Component {
           <Route path="/" element={<Homepage data={this.state.items}/>}/>
           <Route path='/home' element={<Homepage data={this.state.items}/>}/>
           <Route path='/about' element={<About />}/>
+          <Route path='/TrailCard' element={<TrailCard data={this.state.items}/>}/>
           <Route path='trail-details/:id' element={<SearchBox data={this.state.items}/>}/>
         </Routes>
         </header>
