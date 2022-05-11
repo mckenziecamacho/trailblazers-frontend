@@ -49,6 +49,38 @@ a:hover {
 
 }
 
+.trails-images{
+    display: grid;
+    height: 200px;
+    width: auto;
+    padding: 100px;
+    align-items:center;
+    justify-items: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: white;
+    align-content:center;
+ 
+}
+
+.trail-details{
+  display:grid;
+  height:500px;
+  text-align: left;
+  margin: 100px;
+  background-color:white;opacity:20%;
+  border-color:white; opacity: 20%;
+  color:black; opacity:90%;
+  
+}
+
+
+h1{
+  justify-items:center;
+
+}
+
+
 /* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 414px) 
@@ -71,4 +103,6 @@ a:hover {
     .search{
       display: flex;
     }
+
+    
 }
