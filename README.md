@@ -49,24 +49,24 @@ Reviews:
 
 ### User Stories
 
-As a user, I want to easily search for hiking trails on the site
-As a user, I want to search by name or location
-As a user, I want to be able to click images and be directed to detailed information
-As a user, I want to see reviews and insights from other hikers
-As a user, I might be interested in saving the information I have found
+- As a user, I want to easily search for hiking trails on the site
+- As a user, I want to search by name or location
+- As a user, I want to be able to click images and be directed to detailed information
+- As a user, I want to see reviews and insights from other hikers
+- As a user, I might be interested in saving the information I have found
 
 
 ### MVP Goals
 
-Front/Back End Functionality
-Components (Header, Image Cards, Search Box/Results, Info Card, Reviews, Button, Menu)
-Responsive (include mobile)
+- Front/Back End Functionality
+- Components (Header, Image Cards, Search Box/Results, Info Card, Reviews, Button, Menu)
+- Responsive (include mobile)
 
 ### Stretch Goals
 
-User profile
-Backpack storage
-Post a review
+- User profile
+- Backpack storage
+- Post a review
 
 ### Scrum manager/project manager's name
 Tony Bosco
