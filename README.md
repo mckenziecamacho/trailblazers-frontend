@@ -31,20 +31,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### List of Models and Their Properties
 
 Trail
--name: "String"
--location: "String"
--image: "String"
--difficulty: "String"
--miles: Number
--terrain: "String"
--duration: "String"
--site link: "String"
+- name: "String"
+- location: "String"
+- image: "String"
+- difficulty: "String"
+- miles: Number
+- terrain: "String"
+- duration: "String"
+- site link: "String"
 
 Reviews:
--title: "String"
--rating (1-5): Number
--body: "String"
--author: "String"
+- title: "String"
+- rating (1-5): Number
+- body: "String"
+- author: "String"
 
 
 ### User Stories
