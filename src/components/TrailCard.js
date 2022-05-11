@@ -7,6 +7,8 @@ function TrailCard ({trails}){
         <div className='trails-images'>
             <Link to={"/trail-details/" + trails._id}>
             <img src={trails.image} height={300}/>
+            {trails.name}
+            {trails.image}
             </Link>
         </div>
         
