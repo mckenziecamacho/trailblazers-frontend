@@ -4,25 +4,47 @@ import { useState } from 'react';
 
 const url = 'https://take-a-hike-ct.herokuapp.com/api/trail';
 
-function TrailDetails(props) {
-    const [trail, setTrail] = useState([]);
-    //useState allows you to have state variables in functional components
-    const trailId = useParams()._id
-    const trails = props.data.filter(trails => trails._id === trailId)[0]
-    //returns on object of key/value pairs of url parameters
-    useEffect(() => {
-    //tells react that your component needs to do something after render
-        fetch(url + trailId)
-            .then((res) => res.json())
-            .then((res) => {
-                setTrail(res)
-                console.log(res)
-            })
-            .catch((error => {
-            console.log(error)
-            })
-        )
-    },[])
+// function TrailDetails(props) {
+//     const [trail, setTrail] = useState([]);
+//     //useState allows you to have state variables in functional components
+//     const trailId = useParams()._id
+//     const trails = props.data.filter(trails => trails._id === trailId)[0]
+//     //returns on object of key/value pairs of url parameters
+//     useEffect(() => {
+//     //tells react that your component needs to do something after render
+//         fetch(url + trailId)
+//             .then((res) => res.json())
+//             .then((res) => {
+//                 setTrail(res)
+//                 console.log(res)
+//             })
+//             .catch((error => {
+//             console.log(error)
+//             })
+//         )
+//     },[])
+
+
+  const TrailDetails=() => {
+      const[trail,setTrail] =useState("");
+      const trailId = useParams()._id
+      useEffect(() => {
+        const url = 'https://take-a-hike-ct.herokuapp.com/api/trail';
+
+        const fetchData = async () => {
+            try {
+                const response = await fetch(url);
+                const json = await response.json();
+                console.log(json);
+                } catch (error) {
+                console.log("error", error);
+                }
+        };
+
+        fetchData();
+      },[]);
+
+
 
     
     return(
@@ -38,6 +60,7 @@ function TrailDetails(props) {
             <div className='website'> <b>Website: </b> {trail? trail.website : ""}</div>
             <div className='review'> <b>Review: </b> {trail? trail.review : ""}</div>
         </div>
-    )
-}
+    )}
+
+
 export default TrailDetails;
