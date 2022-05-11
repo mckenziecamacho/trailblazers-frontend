@@ -5,6 +5,7 @@ import Homepage from './components/Homepage'
 import SearchBox from './components/SearchBox';
 import About from './components/About'
 import React, {Component} from 'react';
+import TrailDetails from './components/TrailDetails';
 
 
 class App extends Component {
@@ -18,25 +19,26 @@ class App extends Component {
 
   async componentDidMount(){
     //method allows us to execute the react code when the component is already placed in the dom
-    const url = 'https://take-a-hike-ct.herokuapp.com/api/trail';
+    const url = 'https://take-a-hike-ct.herokuapp.com/api/trail/';
     const response = await fetch(url);
     const data = await response.json();
     this.setState({items: data})
+    console.log(data)
   }
-
+  
   render(){
   return (
       <div className="App">
         <header className="App-header">
-          <Header />
-          <SearchBox data={this.state.items}/>
-  
-  
+        <Header />
+        <SearchBox/>
+          
         <Routes>
           <Route path="/" element={<Homepage data={this.state.items}/>}/>
           <Route path='/home' element={<Homepage data={this.state.items}/>}/>
           <Route path='/about' element={<About />}/>
-          <Route path='trail-details/:id' element={<SearchBox data={this.state.items}/>}/>
+          <Route path='/trail-details/:_id' element={<TrailDetails data={this.state.items}/>}/>
+          <Route path='/search' element={<SearchBox data={this.state.items}/>}/>
         </Routes>
         </header>
       </div>

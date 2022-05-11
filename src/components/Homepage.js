@@ -1,6 +1,4 @@
 import React from "react";
-import { useEffect, useState } from "react";  
-// import React, {Component} from 'react';
 import TrailCard from "./TrailCard";
 
 
@@ -11,9 +9,9 @@ const Homepage = (props) => {
         
         <div>
             {
-                props.data.map(trail =>{
+                props.data.map(trail => {
                     return(
-                        <TrailCard trail={trail}/>
+                        <TrailCard trail={trail} key={props}/>
                     )})
 
             }
