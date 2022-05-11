@@ -28,7 +28,7 @@ import { useState } from 'react';
   const TrailDetails=(props) => {
       const[trail,setTrails] =useState("");
       const trailId = useParams()._id
-    //   const trails = props.data.filter(trails => trails._id === trailId)[0]
+      const trails = props.data.filter(trails => trails._id === trailId)[0]
       useEffect(() => {
         const url = 'https://take-a-hike-ct.herokuapp.com/api/trail';
 
@@ -51,16 +51,17 @@ import { useState } from 'react';
     
     return(
         <div className='trail-details'>
-            <div className='name'>  <b>Name: </b>{trail? trail.name : ""}</div>
-            <div className='location'> <b>Location: </b>{trail? trail.location : ""} </div>
-            <div className='image'> <b>Image: </b>{trail? trail.image : ""} </div>
-            <div className='difficulty'> <b>Difficulty: </b>{trail? trail.difficulty : ""} </div>
-            <div className='miles'> <b>Miles: </b> {trail? trail.miles : ""}</div>
-            <div className='terrain'> <b>Terrain: </b> {trail? trail.terrain : ""}</div>
-            <div className='duration'> <b>Duration: </b> {trail? trail.duration : ""}</div>
-            <div className='overview'> <b>Overview:</b> {trail? trail.overview : ""}</div>
-            <div className='website'> <b>Website: </b> {trail? trail.website : ""}</div>
-            <div className='review'> <b>Review: </b> {trail? trail.review : ""}</div>
+            <div className='name'>  <b>Name: </b>{trails? trails.name : ""}</div>
+            <div className='location'> <b>Location: </b>{trails? trails.location : ""} </div>
+            <div className='image'> <b>Image: </b>{trails? trails.image : ""} </div>
+            <div className='difficulty'> <b>Difficulty: </b>{trails? trails.difficulty : ""} </div>
+            <div className='miles'> <b>Miles: </b> {trails? trails.miles : ""}</div>
+            <div className='terrain'> <b>Terrain: </b> {trails? trails.terrain : ""}</div>
+            <div className='duration'> <b>Duration: </b> {trails? trails.duration : ""}</div>
+            <div className='overview'> <b>Overview:</b> {trails? trails.overview : ""}</div>
+            <div className='website'> <b>Website: </b> {trails? trails.website : ""}</div>
+            <div className='review'> <b>Review: </b> {trails? trails.review : ""}</div>
+            <div className='review'> <b>Review: </b> {trails? trails._id: ""}</div>
         </div>
     )}
 
