@@ -2,7 +2,6 @@ import './App.css';
 import Header from './components/Header'
 import { Route, Routes } from 'react-router-dom';
 import Homepage from './components/Homepage'
-import SearchBox from './components/SearchBox';
 import About from './components/About'
 import React, {Component} from 'react';
 import TrailDetails from './components/TrailDetails';
@@ -31,7 +30,6 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
         <Header />
-        <SearchBox/>
           
         <Routes>
           <Route path="/" element={<Homepage data={this.state.items}/>}/>
@@ -39,7 +37,6 @@ class App extends Component {
           <Route path='/about' element={<About />}/>
           <Route path='/trail-details/:_id' element={<TrailDetails data={this.state.items}/>}/>
           <Route path='/TrailCard' element={<TrailCard data={this.state.items}/>}/>
-          <Route path='/search' element={<SearchBox data={this.state.items}/>}/>
         </Routes>
         </header>
       </div>
